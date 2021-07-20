@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark24</title>
+    <description>记录灵感、技术、思考</description>
+    <link>https://mark24code.github.io/</link>
+    <atom:link href="https://mark24code.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Jul 2021 19:15:58 +0800</pubDate>
+    <lastBuildDate>Tue, 20 Jul 2021 19:15:58 +0800</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>实践可以先于理论:思考个人实践的思想</title>
+        <description>&lt;p&gt;计算机的书籍浩如烟海，我们应该何时开始创造？&lt;/p&gt;
+
+&lt;p&gt;我自己包括我见到的很多人，可能考虑的问题都是尽量学习多一点，拥有了储备知识再去创造。&lt;/p&gt;
+
+&lt;p&gt;虽然时间变久，我觉得前期这句话是正确的，中后期这句话是不正确的。&lt;/p&gt;
+
+&lt;p&gt;理论和实践之间的相对关系应该是怎么样的？&lt;/p&gt;
+
+&lt;p&gt;我现在的个人想法是：&lt;/p&gt;
+
+&lt;p&gt;1）我们学习什么？&lt;/p&gt;
+
+&lt;p&gt;我们学习的不应该是一些符号，一些API怎么用？这些东西肤浅且易变，他们虽然是程序的载体，确是程序中最不重要的东西。&lt;/p&gt;
+
+&lt;p&gt;学习编程应该像张无忌学武功，我们要尽量忘记所有有形的东西，然后尝试理解无形的东西——思想。&lt;/p&gt;
+
+&lt;p&gt;2）理论和实践&lt;/p&gt;
+
+&lt;p&gt;编程里面，如果明白了一些基础理论和思想就可以干活了。&lt;/p&gt;
+
+&lt;p&gt;程序可能不够优雅也不够健壮但是不阻碍他可以工作。&lt;/p&gt;
+
+&lt;p&gt;理论指导虽然可以提供帮助，但是脱离了问题存在的程序往往没有存在的意义。&lt;/p&gt;
+
+&lt;p&gt;任何书本、理论仅仅是传递一种这样的信息——这个问题曾经存在过，作者把自己的思考借助书本表达了出来。&lt;/p&gt;
+
+&lt;p&gt;现实情况往往是，新时代有新问题，新环境有新问题……就像马克思说的问题在螺旋上升中不断地出现。&lt;/p&gt;
+
+&lt;p&gt;一千个人心中有一千个哈姆雷特。问题、编程理论也类似。&lt;/p&gt;
+
+&lt;p&gt;程序与其说是解决问题，也像一种自我表达。每个人理解不一样，对解决方案的期待也不一样。正是因为这种差异性，所以个体重造轮子也是存在正当意义的。&lt;/p&gt;
+
+&lt;p&gt;3）实践开始，创造理论&lt;/p&gt;
+
+&lt;p&gt;我们应该追求一种能力就是把握住思想，然后创造知识（框架、理论……）。&lt;/p&gt;
+
+&lt;p&gt;我来一个不恰当的比喻。开国领袖不必要研究完所有二十五史，才能带兵打仗。社会上的精英也有二十五六七八。&lt;/p&gt;
+
+&lt;p&gt;更别提创造性、开创性的工作比如牛顿的开创性理论。&lt;/p&gt;
+
+&lt;p&gt;实践是开创性工作的先河。应该先去开始，然后过程中不断地思考、学习、寻找支持自己的理论。然后推进整个过程。&lt;/p&gt;
+
+&lt;p&gt;而不是反过来。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jul 2021 16:39:46 +0800</pubDate>
+        <link>https://mark24code.github.io/%E9%9A%8F%E7%AC%94/2021/07/20/%E5%AE%9E%E8%B7%B5%E5%8F%AF%E4%BB%A5%E5%85%88%E4%BA%8E%E7%90%86%E8%AE%BA-%E6%80%9D%E8%80%83%E4%B8%AA%E4%BA%BA%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%80%9D%E6%83%B3.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/%E9%9A%8F%E7%AC%94/2021/07/20/%E5%AE%9E%E8%B7%B5%E5%8F%AF%E4%BB%A5%E5%85%88%E4%BA%8E%E7%90%86%E8%AE%BA-%E6%80%9D%E8%80%83%E4%B8%AA%E4%BA%BA%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%80%9D%E6%83%B3.html</guid>
+        
+        
+        <category>随笔</category>
+        
+      </item>
+    
+      <item>
+        <title>解剖复杂语言和框架的方法</title>
+        <description>&lt;h1 id=&quot;一我的思想&quot;&gt;一、我的思想&lt;/h1&gt;
+
+&lt;h2 id=&quot;11-三要素&quot;&gt;1.1 三要素&lt;/h2&gt;
+
+&lt;p&gt;我总是忘记，我记录一下吧。&lt;/p&gt;
+
+&lt;p&gt;在我心中一直有一个困扰就是如何剖析比较复杂框架、应用的过程。举个例子，比如Ruby中把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Monkey Patching&lt;/code&gt; 当做特性, 比如高度的动态性，可以任意对象增加方法，可以使用复杂的继承比如&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rails&lt;/code&gt;,也可以在全局注入 DSL 方法比如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sinatra&lt;/code&gt; ……&lt;/p&gt;
+
+&lt;p&gt;魔法有很多，我们如何观察魔法呢？我们有什么方式可以梳理这种动态性。和复杂性。&lt;/p&gt;
+
+&lt;p&gt;我仔细想了一些这种问题。我给出一些我的思考。&lt;/p&gt;
+
+&lt;p&gt;不论是看源码，看执行，自己写代码，debugger…… 本质上这些行为是有几个必备的要素的：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 入口
+2. 观测方法/方式
+3. 步进信息
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这是很抽象的维度，但是可以寻找这几个要素。举个例子吧，比如我最近遇到的，如何debugger线上问题，线上是一个Hybrid页面，嵌套在App里。&lt;/p&gt;
+
+&lt;p&gt;如何解决debugger线上的问题呢？&lt;/p&gt;
+
+&lt;p&gt;1) 首先就是寻找入口，如何可以让app没有入口的条件下，进入。
+这有好多方式了&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;给你一个灰度&lt;/li&gt;
+  &lt;li&gt;使用约定的scheme跳转进入&lt;/li&gt;
+  &lt;li&gt;使用约定的菜单、配置banner进入
+……
+总之你要解决入口问题。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2) 其次就是观测方法，程序一般的方法是通过日志。也可以是debugger，也可以是一些数据仪表。总之只要是描述我们关心的信息。能表征变化的即可。&lt;/p&gt;
+
+&lt;p&gt;3) 再者就是一种步进信息，这里我说的很抽象。实际上程序是一个时间的函数。任何程序都是如此。所以，前面的方法只是铺垫，观察出一个点，那么随着交互、输入数据、时间变化……程序是不是会发生变化，输出会有什么不同。这种 diff 就是步进信息。&lt;/p&gt;
+
+&lt;p&gt;观测的方式总要找到这三个要素。或者可以有目标解决这三点。&lt;/p&gt;
+
+&lt;h2 id=&quot;12-以ruby为例&quot;&gt;1.2 以Ruby为例&lt;/h2&gt;
+
+&lt;p&gt;我想解决的就是面对复杂的Ruby应用，别人写的，我自己写的，或者Ruby自己我怎么剖析他。&lt;/p&gt;
+
+&lt;p&gt;你可能看到过很多的文档、注释甚至原理性的书籍，但是往往不够。因为他们可能出现滞后，永远描述的不是你正在经历的东西。&lt;/p&gt;
+
+&lt;p&gt;我怎么去剖析 sinatra呢（抱歉的是Rails没看过）？&lt;/p&gt;
+
+&lt;h3 id=&quot;1入口&quot;&gt;1.入口&lt;/h3&gt;
+
+&lt;p&gt;启动的Sinatra应用是一个入口。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;web是一个切入口&lt;/li&gt;
+  &lt;li&gt;程序本身也是一个切入口。&lt;/li&gt;
+  &lt;li&gt;pry在Ruby的范畴里也是一个入口
+……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我选择了不同的入口，从而进入不同的切面去观察这件事情。&lt;/p&gt;
+
+&lt;h3 id=&quot;2观察的方式步进信息&quot;&gt;2.观察的方式&amp;amp;步进信息&lt;/h3&gt;
+
+&lt;p&gt;讨论一下方式，方式其实有很多种。这些方式都伴随着过程&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;最常见的是 log：&lt;/p&gt;
+
+    &lt;p&gt;log就是一种时间信息。最朴素又管用&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;debugger：&lt;/p&gt;
+
+    &lt;p&gt;我们自己写的东西log可能比较合适。但是涉及到应用、框架、语言底层超出我们控制的范围，log可能就不奏效了。&lt;/p&gt;
+
+    &lt;p&gt;当然你也可以吧源码拿过来编译，注入log也可以，但是这个方法对编译的语言会失效。&lt;/p&gt;
+
+    &lt;p&gt;这里可以使用debugger工具，debugger是一种黏贴进程的方式，输出每步内存信息。&lt;/p&gt;
+
+    &lt;p&gt;这里也是我推荐追踪源码、追踪复杂框架的一种方式。&lt;/p&gt;
+
+    &lt;p&gt;我的思考：&lt;/p&gt;
+
+    &lt;p&gt;我是习惯于log的，以致于我总是忽略debuger这种思想的存在。所以我在研究外部的东西是有弱点的。就是我的观察方式和抓瞎差不多。&lt;/p&gt;
+
+    &lt;p&gt;debugger是一个好的方式。代码本质上是最好的文档。代码也是时间的函数。debugger好的在于可以让内存中变量的状态得到展现。比如在动态语言中，模块、方法、局部变量如何变化。这其实就是我们关心的。log是一种两头的测量方式，来获得这种变化信息。debugger更加细颗粒度。debugger的方式更加朴素——向解释器/编译器伸手要答案。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;内部自省/反射的方法&lt;/p&gt;
+
+    &lt;p&gt;这个更多是配合log和debugger把内部的变量内容暴露出来。&lt;/p&gt;
+
+    &lt;p&gt;是一种由内而外的观察。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;IDE&lt;/p&gt;
+
+    &lt;p&gt;工程化的IDE可能会提供一些信息。有的信息来自于上面。有的信息来自于IDE对工程性的理解。这里就是额外的扫描依赖库、代码本身建立了索引联系。从来揭示一些关系。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;题外话：如何列出 Ruby中所有的get方法来自的模块和文件？
+我之前一致想要找到这样的方法。似乎是没有的。IDE是可以做到的，因为IDE会扫描工程本身和依赖库，他是可以额外建立索引的。
+如果想找到一个Ruby自身的方式可能没有。Ruby提供一个 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method&lt;/code&gt; 的方法，他可以返回最先找到的一个方法的 owner、source_location。
+其实我后面想想这是合理的 —— Ruby内部是维护了一个Map解构，这个解构再运行中一直在改变，一些书 比如《Ruby原理剖析》讲了一些内部的细节。内部是一个结构体，通过偏移和索引来工作。Ruby不关心全览，Ruby就是执行到什么就输出什么。所以&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method&lt;/code&gt;输出最近遇到的一个是合理的。如果Ruby内部存在一个全览的方法，那意味着Ruby一定扫描全部代码了，很显然没有。
+所以Ruby作为一个动态语言，其实他是一个执行的过程。很多东西需要执行中检验或者看到。当然所有程序都是这样，但是Ruby更加强调着一点。
+所以保证它的稳定性，需要用单侧，使用运行的东西时刻的保证运行时符合预期。
+其实观察原理，其实就是要观察动态的过程。也就是上面提到的步进信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 20 Jul 2021 15:06:31 +0800</pubDate>
+        <link>https://mark24code.github.io/%E7%BC%96%E7%A8%8B%E6%80%9D%E8%80%83/2021/07/20/%E6%8E%A2%E9%92%88-%E4%B8%80%E7%A7%8D%E6%80%9D%E6%83%B3%E5%8E%BB%E8%A7%A3%E5%89%96%E5%A4%8D%E6%9D%82%E8%AF%AD%E8%A8%80%E5%92%8C%E6%A1%86%E6%9E%B6.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/%E7%BC%96%E7%A8%8B%E6%80%9D%E8%80%83/2021/07/20/%E6%8E%A2%E9%92%88-%E4%B8%80%E7%A7%8D%E6%80%9D%E6%83%B3%E5%8E%BB%E8%A7%A3%E5%89%96%E5%A4%8D%E6%9D%82%E8%AF%AD%E8%A8%80%E5%92%8C%E6%A1%86%E6%9E%B6.html</guid>
+        
+        
+        <category>编程思考</category>
+        
+      </item>
+    
+      <item>
+        <title>Hybrid H5线上debug或者提供一个个人灰度的方法</title>
+        <description>&lt;h1 id=&quot;一一个线上debug-h5的方法&quot;&gt;一、一个线上debug H5的方法&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确保你的环境使用docker构建&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;遇到线上失败的问题时，不论是下载构建产物本地部署。那都不能保证和线上一样的环境。&lt;/p&gt;
+
+&lt;p&gt;所以我的方法是&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;下载线上镜像，本地部署&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安卓可以打包出一个预览&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console&lt;/code&gt;的生产包&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用scheme的方式，从浏览器跳转进入app预览页面&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;处理好跨域问题，域名问题。比如本地在当前网络中设置一个后端服务器接受的跨域的域名。&lt;/p&gt;
+
+&lt;p&gt;用 app通过scheme方式跳转进入部署在本地&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt;中的H5页面&lt;/p&gt;
+
+&lt;p&gt;手机接入电脑，使用 chrome的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chrome://inspect&lt;/code&gt; 查看设备中打开的web进行预览以及查看&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在非常极端的条件下，可以提供线上debug的功能。&lt;/p&gt;
+
+&lt;p&gt;这里的关键在于&lt;/p&gt;
+
+&lt;p&gt;1） &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt;保证了线上环境一致。&lt;/p&gt;
+
+&lt;p&gt;本质使用构建产物部署，可能缺失环境变量&lt;/p&gt;
+
+&lt;p&gt;2）提供一个入口可以进入&lt;/p&gt;
+
+&lt;p&gt;3）提供观察工具&lt;/p&gt;
+
+&lt;h1 id=&quot;二也可以是一个灰度环境&quot;&gt;二、也可以是一个灰度环境&lt;/h1&gt;
+
+&lt;p&gt;同理，由于这种方式可以提供一个入口进入。即使在app中没有公布入口，通过这种方式可以进入。作为一个少部分人提前灰度的方法。&lt;/p&gt;
+
+&lt;p&gt;比如预览线上、QA线上回归等。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jul 2021 12:52:21 +0800</pubDate>
+        <link>https://mark24code.github.io/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/2021/07/20/Hybrid-H5%E7%BA%BF%E4%B8%8Adebug%E6%88%96%E8%80%85%E6%8F%90%E4%BE%9B%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%81%B0%E5%BA%A6%E7%9A%84%E6%96%B9%E6%B3%95.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/2021/07/20/Hybrid-H5%E7%BA%BF%E4%B8%8Adebug%E6%88%96%E8%80%85%E6%8F%90%E4%BE%9B%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E7%81%B0%E5%BA%A6%E7%9A%84%E6%96%B9%E6%B3%95.html</guid>
+        
+        
+        <category>分享发现</category>
+        
+      </item>
+    
+      <item>
+        <title>Ruby自省/反射笔记</title>
+        <description>&lt;h1 id=&quot;ruby原生自省的一些方法&quot;&gt;Ruby原生自省的一些方法&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获取类的名称：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;获取超类的名称：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;superclass&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;获取父类&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获取类包含的模块：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;included_modules&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;检查是否为实例对象：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_of?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;呈现对象关系：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ancestors&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#(返回类和模块名称)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;返回变量及常量：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_variables&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;　　&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;constants&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;　　&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;local_variables&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;　　&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;global_variables&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;获取对象包含的方法：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;　　&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_methods&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;　　&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;private_methods&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;检查对象是否对方法负责：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;respond_to?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;获得对象内部的内存和静态数据&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;查看RubyDoc中关于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectSpace&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;查看所有方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;methods&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;查看特定方法的源码&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:method_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:method_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;owner&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:method_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;source_location&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;查看常量(也包含了引用的模块)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;constants&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于所有导入的包，都是绑定在Object上面的。所以这个可以用来查看，导入的名字空间，类似于 Python的 dir()。检验方法&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;origin_constant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;constants&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sinatra'&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;import_sinatra&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;constants&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;import_sinatra&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin_constant&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rails'&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;import_rails&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;constants&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;import_rails&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;import_sinatra&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 可以查看全部都是绑定在Object中&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;文献参考&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;默认的模式，都是拓展在Object的基础上，参考Sinatra方式&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This style is called a modular application, as opposed to classic applications that are
+using the Top Level DSL. While classic applications assume a certain style by default
+and extend Object , starting with a modular application assumes next to nothing about
+your application setup.
+
+	—— 《Sinatra Up and Runing》CHAPTER 4 Modular Applications  (Page 67) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;第三方gem&quot;&gt;第三方gem&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/daveallie/where_is&quot;&gt;where_is&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 18 Jul 2021 10:42:54 +0800</pubDate>
+        <link>https://mark24code.github.io/ruby/2021/07/18/Ruby%E8%87%AA%E7%9C%81.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/ruby/2021/07/18/Ruby%E8%87%AA%E7%9C%81.html</guid>
+        
+        
+        <category>Ruby</category>
+        
+      </item>
+    
+      <item>
+        <title>keymap统一车同轨书同文</title>
+        <description>&lt;h1 id=&quot;一尝试保持一致建立连接&quot;&gt;一、尝试保持一致建立连接&lt;/h1&gt;
+
+&lt;p&gt;想用一个计划，尝试统一IDE和编辑器之间Keymap的鸿沟。&lt;/p&gt;
+
+&lt;p&gt;经过一番折腾和思考。&lt;/p&gt;
+
+&lt;p&gt;如何做到 Vim、Emacs、Sublime、Vscode、Jetbrians他们的keymap统一呢？&lt;/p&gt;
+
+&lt;p&gt;实际上做不到。&lt;/p&gt;
+
+&lt;p&gt;我们看到过 Vscode里面有Sublime的keymap，Jetbrians里面有Vscode的keymap但是很少反过来。Emacs和Vim他们切换为Sublime的keymap。&lt;/p&gt;
+
+&lt;p&gt;因为Vim、Emacs他们底层依靠快捷键工作。&lt;/p&gt;
+
+&lt;p&gt;假设我们想实现目标，可以让所有IDE、编辑器切换为 Vim、Emacs的keymap，这样可以工作么？&lt;/p&gt;
+
+&lt;p&gt;是可以的。但是，不适用。&lt;/p&gt;
+
+&lt;p&gt;因为Vim和Emacs如果不加配置，他们默认的操作方式，只不过是按照  屏幕、段落、行、单词 的快速移动和简单编辑。&lt;/p&gt;
+
+&lt;p&gt;这些功能如果仅仅是简单修改个配置，他是可以使用的，编写英文文档也能帮上忙。&lt;/p&gt;
+
+&lt;p&gt;但是如果是编写代码，拿今天的角度还差点意思。&lt;/p&gt;
+
+&lt;p&gt;现代编辑器以Sublime以及以后开创的一些便捷的功能——跳转函数、跳转文件、多行编辑、快速高亮选定词同步更改……&lt;/p&gt;
+
+&lt;p&gt;实际上这些功能的使用频率很高。而多行编辑、或者简单的多行注释，在Vim和Emacs里相当复杂。&lt;/p&gt;
+
+&lt;p&gt;如果Vim和Emacs提供过插件补全了功能，那么问题将会变得复杂。多端将会无法统一。&lt;/p&gt;
+
+&lt;p&gt;好了，问题来了。&lt;/p&gt;
+
+&lt;p&gt;实际上，多端keymap的核心不是选定某个编辑器的快捷键方式，而是选中一种操作代码的快捷方式，我们要的不是行移动等基础操作，我们要的其实是——跳转函数、跳转文件、多行编辑、快速高亮选定词同步更改……&lt;/p&gt;
+
+&lt;p&gt;这些操作就像接口一样，被我们使用习惯了。&lt;/p&gt;
+
+&lt;p&gt;所以起到keymap承载作用的可以是 sublime的keymap&lt;/p&gt;
+
+&lt;p&gt;正好Jetbrains2021也官方支持了Sublime的keymap&lt;/p&gt;
+
+&lt;p&gt;在Windows和Mac中起到键位差距的其实是 Windows的Ctrl在Mac里几乎就是Command。&lt;/p&gt;
+
+&lt;p&gt;我们要做的就是 把Mac里面的 大写锁定替换为 Cmd， 在Windows/Linux里面 把大写锁定替换为 Ctrl。&lt;/p&gt;
+
+&lt;p&gt;使用默认的Sublime keymap，就可以让Sublime、Vscode、Jetbrians达到统一。&lt;/p&gt;
+
+&lt;p&gt;Sublime的快捷键也是十分必要和简单的。&lt;/p&gt;
+
+&lt;p&gt;至于Vim和Emacs 仅仅保留他们的基础操作，在命令行、服务器里作为简单修改配置的工具好了。不适合链接。&lt;/p&gt;
+
+&lt;p&gt;从此可以“车同轨、书同文”。&lt;/p&gt;
+
+&lt;p&gt;三个编辑器/IDE 在 Window、Mac、Linux上都可以达到写代码上的一致。&lt;/p&gt;
+
+&lt;h1 id=&quot;二linux上更改keymap&quot;&gt;二、Linux上更改keymap&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;CapsLock更换为Ctrl&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo vim /etc/default/keyboard&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;将 XKBOPTIONS=”” 修改为&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;XKBOPTIONS=&quot;ctrl:nocaps&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以查看 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man 5 keyboard&lt;/code&gt; 获得帮助&lt;/p&gt;
+
+&lt;p&gt;使得配置生效&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo dpkg-reconfigure keyboard-configuration&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不过在Ubuntu20.04中要之后要真正重启才会生效&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.yinxiang.com/shard/s66/nl/15344178/5bb817dd-f27a-4e92-bf9a-5c59f1d2a683?title=Ubuntu%20%E5%B0%86%20caps%20lock%20%E6%94%B9%E4%B8%BA%20Ctrl%E9%94%AE%20-%20%E7%AE%80%E4%B9%A6&quot;&gt;Ubuntu 将 caps lock 改为 Ctrl键&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 15 Jul 2021 14:33:13 +0800</pubDate>
+        <link>https://mark24code.github.io/%E7%BC%96%E8%BE%91%E5%99%A8/2021/07/15/keymap%E7%BB%9F%E4%B8%80%E8%BD%A6%E5%90%8C%E8%BD%A8%E4%B9%A6%E5%90%8C%E6%96%87.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/%E7%BC%96%E8%BE%91%E5%99%A8/2021/07/15/keymap%E7%BB%9F%E4%B8%80%E8%BD%A6%E5%90%8C%E8%BD%A8%E4%B9%A6%E5%90%8C%E6%96%87.html</guid>
+        
+        
+        <category>编辑器</category>
+        
+      </item>
+    
+      <item>
+        <title>emacs第N次尝试的笔记</title>
+        <description>&lt;h1 id=&quot;键位说明&quot;&gt;键位说明&lt;/h1&gt;
+
+&lt;h2 id=&quot;键盘布局&quot;&gt;键盘布局&lt;/h2&gt;
+
+&lt;p&gt;一般的PC键盘&lt;/p&gt;
+
+&lt;p&gt;Ctrl   Win  Alt&lt;/p&gt;
+
+&lt;p&gt;一般的Mac键盘&lt;/p&gt;
+
+&lt;p&gt;Ctrl  Option  Command&lt;/p&gt;
+
+&lt;p&gt;PC和Mac的关系往往是  PC中的 Ctrl 对应的功能，在Mac中的Command对应&lt;/p&gt;
+
+&lt;p&gt;PC键盘连接在Mac上，Win键就是 Command&lt;/p&gt;
+
+&lt;h2 id=&quot;键盘映射关系&quot;&gt;键盘映射关系&lt;/h2&gt;
+
+&lt;p&gt;情景：Mac链接Filco键盘左布局 Ctrl   Win  Alt
+C（Ctrl）
+M (Meta 对应 Alt)&lt;/p&gt;
+
+&lt;p&gt;情景：Mac键盘 Ctrl Option  Command
+C（Ctrl）
+M (Meta 对应 Option)&lt;/p&gt;
+
+&lt;p&gt;以下按照Emacs  以 C和M的形式描述记录。&lt;/p&gt;
+
+&lt;h1 id=&quot;一快捷键&quot;&gt;一、快捷键&lt;/h1&gt;
+
+&lt;p&gt;用空行分割，上面是我觉得常用的。下面是不常用的。
+理论上只要记忆常用的。&lt;/p&gt;
+
+&lt;h2 id=&quot;1-移动&quot;&gt;1 移动&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-v&lt;/td&gt;
+      &lt;td&gt;向下移动20%&lt;/td&gt;
+      &lt;td&gt;PageDown&lt;/td&gt;
+      &lt;td&gt;屏幕滚动&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-v&lt;/td&gt;
+      &lt;td&gt;向上移动20%&lt;/td&gt;
+      &lt;td&gt;PageUp&lt;/td&gt;
+      &lt;td&gt;屏幕滚动&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-p/n&lt;/td&gt;
+      &lt;td&gt;光标上下行移动&lt;/td&gt;
+      &lt;td&gt;方向上下&lt;/td&gt;
+      &lt;td&gt;光标移动y方向&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-b/f&lt;/td&gt;
+      &lt;td&gt;光标上左右移动&lt;/td&gt;
+      &lt;td&gt;方向左右&lt;/td&gt;
+      &lt;td&gt;光标移动x方向&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-b/f&lt;/td&gt;
+      &lt;td&gt;以单词为单位左右移动&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;单词移动x方向；&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-a/e&lt;/td&gt;
+      &lt;td&gt;行首尾移动&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;行移动&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-a/e&lt;/td&gt;
+      &lt;td&gt;段落首尾移动&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;段落移动&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-&amp;lt;/&amp;gt;&lt;/td&gt;
+      &lt;td&gt;文件首尾&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;需要shift辅助&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;辅助记忆：&lt;/p&gt;
+
+&lt;p&gt;1) 替代品&lt;/p&gt;
+
+&lt;p&gt;78键盘辅助键盘可以替代一半。&lt;/p&gt;
+
+&lt;p&gt;C 偏向于光标为单位的控制&lt;/p&gt;
+
+&lt;p&gt;M 偏向于文本，以及段落整体的控制&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C是Control是基础级别控制，M是再进一级的控制&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2）含义&lt;/p&gt;
+
+&lt;p&gt;p/n 分别是 previous, next&lt;/p&gt;
+
+&lt;p&gt;a/e 分别是 ahead, end&lt;/p&gt;
+
+&lt;p&gt;b/f 分别是 back, forward&lt;/p&gt;
+
+&lt;p&gt;评价：&lt;/p&gt;
+
+&lt;p&gt;其实这部分操作没啥用在实践中。&lt;/p&gt;
+
+&lt;p&gt;写程序的特点可能是&lt;/p&gt;
+
+&lt;p&gt;1）屏幕滚动
+2) 行的首尾移动
+3) 单词的移动。 其中单词的移动配合单词的删除和粘贴。最常用
+4) 函数的或者闭合标签的移动
+5) 文件头尾移动&lt;/p&gt;
+
+&lt;h2 id=&quot;2-重复&quot;&gt;2 重复&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-u n 命令&lt;/td&gt;
+      &lt;td&gt;重复 n 次 命令&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;输入多个*比较有用&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;命令可以是字符输入行为，也可以是C-&amp;lt;&amp;gt;等操作&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;辅助记忆：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;u 可以理解为 union 结合使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-编辑器行为&quot;&gt;3 编辑器行为&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-g&lt;/td&gt;
+      &lt;td&gt;取消正在编辑&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ESC ESC ESC&lt;/td&gt;
+      &lt;td&gt;可以退出递归编辑状态, 这条命令也可以用来关掉多余的window 或者离开minibuffer 区域&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x-c&lt;/td&gt;
+      &lt;td&gt;退出Emacs&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-z&lt;/td&gt;
+      &lt;td&gt;保留Emacs&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%emacs&lt;/td&gt;
+      &lt;td&gt;恢复emacs&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;辅助记忆&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;g 可以理解为 gap表示打断中断&lt;/li&gt;
+  &lt;li&gt;C-x是功能前缀x代表未知可能，我推测其实是他的位置最舒适，不远也不近刚刚好。&lt;/li&gt;
+  &lt;li&gt;c 就是Linux里面 Ctrl-C 就是推出，理解为 close好了&lt;/li&gt;
+  &lt;li&gt;z 也是Linux里面休眠使用的理解为睡觉好了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-编辑文本&quot;&gt;4 编辑文本&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-/&lt;/td&gt;
+      &lt;td&gt;撤销&lt;/td&gt;
+      &lt;td&gt;C-x u&lt;/td&gt;
+      &lt;td&gt;undo C-/是一个alias命令本质是 C-x u&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;键盘输入&lt;/td&gt;
+      &lt;td&gt;输入字符&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;字符输入&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Delete或者C-d&lt;/td&gt;
+      &lt;td&gt;删除上一个/下一个字符&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;字符删除&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-delete/d&lt;/td&gt;
+      &lt;td&gt;剪切光标向前一个单词/向后一个单词&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-k&lt;/td&gt;
+      &lt;td&gt;剪切光标后这一行&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;按一次去掉内容，第二次会去掉换行符。 C-u 2 C-k则会删除2行&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-a C-k&lt;/td&gt;
+      &lt;td&gt;删除一行，不带删除换行符&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;再一次C-k是移除这一行&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-k&lt;/td&gt;
+      &lt;td&gt;剪切从光标后这一句&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-@&lt;/td&gt;
+      &lt;td&gt;高亮选中部分&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C/M-w&lt;/td&gt;
+      &lt;td&gt;剪切/复制 选中部分&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-y&lt;/td&gt;
+      &lt;td&gt;粘贴&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Yanking 多次的C-k会被一起粘贴，且可以粘贴多次&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M-y&lt;/td&gt;
+      &lt;td&gt;粘贴内容变为上次剪切的&lt;/td&gt;
+      &lt;td&gt;给复数可以逆向滚动&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;备注 
+C-a C-k 可以按住 C 输入 a k
+以句为单位其实都不太实用。往往干掉好多连续的代码。以行为单位更实用。尤其是我们并不是英语为主，也不编辑英文。中文的段落都是连续在一起，没有空格分开。中文的句和英文的句不同。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;辅助记忆:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;k 可以记忆成 kill 就像一条横线一样划掉光标后面所有的内容&lt;/li&gt;
+  &lt;li&gt;w 是 wrapper 选中部分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5-搜索&quot;&gt;5 搜索&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-s/r&lt;/td&gt;
+      &lt;td&gt;向下/向上查找&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;在 M-p/n 可以翻查搜索的历史记录&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;辅助记忆:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;s: search 可以理解正常向下搜索&lt;/li&gt;
+  &lt;li&gt;r: return-search 理解为回头向上查找&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;C-s 搜索时候，输入文字进行搜索高亮&lt;/p&gt;
+
+&lt;p&gt;回车，推出搜索模式&lt;/p&gt;
+
+&lt;p&gt;在搜索模式中&lt;/p&gt;
+
+&lt;p&gt;C-s/r 是向下/上到高亮单词&lt;/p&gt;
+
+&lt;h2 id=&quot;6-文件&quot;&gt;6 文件&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x-f&lt;/td&gt;
+      &lt;td&gt;打开/新建文档&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x-s&lt;/td&gt;
+      &lt;td&gt;保存文件&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x-w&lt;/td&gt;
+      &lt;td&gt;另存为&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;辅助记忆:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;f: file&lt;/li&gt;
+  &lt;li&gt;s: save&lt;/li&gt;
+  &lt;li&gt;w: write as ….&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;7-窗口&quot;&gt;7 窗口&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x 0&lt;/td&gt;
+      &lt;td&gt;杀死当前窗口&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;不是 C-x C-0而是 C-x后，再输入 0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x 1&lt;/td&gt;
+      &lt;td&gt;仅保留当前窗口&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x 2&lt;/td&gt;
+      &lt;td&gt;当前窗口上下分裂&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x 3&lt;/td&gt;
+      &lt;td&gt;当前窗口左右分裂&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x o&lt;/td&gt;
+      &lt;td&gt;切换窗口&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-M-v（三键连按） 或者 Esc C-v（要一次一次按）&lt;/td&gt;
+      &lt;td&gt;第二窗口翻页&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x 4 C-f&lt;/td&gt;
+      &lt;td&gt;新窗口打开文件&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;8-buffer&quot;&gt;8 Buffer&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x-b&lt;/td&gt;
+      &lt;td&gt;列出所有buffer&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-x b&lt;/td&gt;
+      &lt;td&gt;当前窗口切换到另一个buff&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;默认最近&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;9-帮助&quot;&gt;9 帮助&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;快捷键&lt;/th&gt;
+      &lt;th&gt;作用&lt;/th&gt;
+      &lt;th&gt;等效&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-h f&lt;/td&gt;
+      &lt;td&gt;查看帮助&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C-h k 命令&lt;/td&gt;
+      &lt;td&gt;查看 命令 帮助&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiutedyuan.github.io/blog/2019/06/12/Emacs%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%B8%80%E8%A7%88/&quot;&gt;Emacs常用快捷键一览&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 15 Jul 2021 11:31:48 +0800</pubDate>
+        <link>https://mark24code.github.io/emacs/2021/07/15/emacs%E7%AC%ACN%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%9A%84%E7%AC%94%E8%AE%B0.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/emacs/2021/07/15/emacs%E7%AC%ACN%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%9A%84%E7%AC%94%E8%AE%B0.html</guid>
+        
+        
+        <category>Emacs</category>
+        
+      </item>
+    
+      <item>
+        <title>对程序发展的观察随笔</title>
+        <description>&lt;h1 id=&quot;一-web本地化应用化的趋势&quot;&gt;一、 web本地化，应用化的趋势。&lt;/h1&gt;
+
+&lt;p&gt;就是把网页做出app化。&lt;/p&gt;
+
+&lt;p&gt;网页刚开始是一个模板字符串&lt;/p&gt;
+
+&lt;p&gt;然后是SPA，SPA的网页可以拥有状态了。可以处理渲染了。&lt;/p&gt;
+
+&lt;p&gt;然后是SPA本地化。看起来就像app，只做了本地资源的缓存。&lt;/p&gt;
+
+&lt;p&gt;再往前走一步。&lt;/p&gt;
+
+&lt;p&gt;SPA本地应用化，拥有自己的DB。现在已经存在IndexDB了。但是用的人很少。或者说某种业务还没出现。&lt;/p&gt;
+
+&lt;p&gt;未来用户拿到的是一个切片的应用程序。然后可以组装成一个完整的应用。包括离线使用。Google的Docs等已经可以这样了。但是大众网页还没有跟进。&lt;/p&gt;
+
+&lt;p&gt;这是一个趋势。前端应用和后端应用的逻辑——最好能跑一套。我就造个名字称之为——双生程序。就像孪生兄弟，或者像照镜子，他们是相伴相生的解构。&lt;/p&gt;
+
+&lt;p&gt;因此，未来的Web框架，最基本要照顾到几点：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;本地DB&lt;/li&gt;
+  &lt;li&gt;多线程worker 应该是常态&lt;/li&gt;
+  &lt;li&gt;MVVM是底层&lt;/li&gt;
+  &lt;li&gt;可能存在一个虚拟机，可以实现双生程序的前提。让客户端和后端代码一致。&lt;/li&gt;
+  &lt;li&gt;各种降级策略。
+    &lt;ol&gt;
+      &lt;li&gt;热更&lt;/li&gt;
+      &lt;li&gt;离线&lt;/li&gt;
+      &lt;li&gt;web模式&lt;/li&gt;
+      &lt;li&gt;App模式&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;二程序解构的递归性&quot;&gt;二、程序解构的递归性&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;一个完整的程序，都应该表现得像操作系统。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一个不完整的程序，表现为操作系统功能的子集，实现一部分。其余部分可以交给寄生平台或者操作系统代为管理。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一个不完成的程序，是因为使用某种平台。二把操作系统的任务转移。最明显的例子是 浏览器，他负责了本地化、调度、渲染、网络等等。&lt;/p&gt;
+
+&lt;p&gt;如果我们自己构建一个程序。就必须考虑到基本的主线程，工作线程。&lt;/p&gt;
+
+&lt;p&gt;然后对特殊任务实现调度。
+    为什么说特殊任务。因为看不见的比如数据，和看得见某种交互，他们对时间切面的敏感度不同。交互需要任意打断。&lt;/p&gt;
+
+&lt;p&gt;解构呈现递归性。
+一些例子：&lt;/p&gt;
+
+&lt;p&gt;数据库对线程和网络连接的使用。对主进程，子进程的管理和控制。&lt;/p&gt;
+
+&lt;p&gt;React实现了类似操作系统的调度。实现了类似视窗系统的MVVM模式。&lt;/p&gt;
+
+&lt;p&gt;Sublime裁剪了一个Python的核心，作为内部的调度核心、独立实现的了UI的自己搭建&lt;/p&gt;
+
+&lt;p&gt;Vim有处理系统、排班系统、插件系统&lt;/p&gt;
+
+&lt;p&gt;Emacs表现得就像一个操作系统，并且以此为称呼。&lt;/p&gt;
+
+&lt;p&gt;IDE等程序，变现在除了多各种文件格式处理，还有控制内存管理。&lt;/p&gt;
+
+&lt;p&gt;Unicorn等框架，自己做了内部调度，但是吧管理进程的事情交给了操作系统，间接完成了任务。&lt;/p&gt;
+
+&lt;p&gt;Docker等容器化工具，自己做了接口层，但是最终虚拟化的工作交给了操作系统内核。&lt;/p&gt;
+
+&lt;p&gt;操作系统里面的程序，和具体的程序本身无二。他们都可以具备完整性。也可以拥有内部的解构。尤其是它存在一个生态的解构，他应对的事情足够复杂，具有足够拓展性。&lt;/p&gt;
+
+&lt;p&gt;类似Chrome从浏览器变成了 ChromeOS&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 09 Jul 2021 11:59:48 +0800</pubDate>
+        <link>https://mark24code.github.io/%E9%9A%8F%E7%AC%94/%E7%BC%96%E7%A8%8B%E6%80%9D%E8%80%83/2021/07/09/%E5%AF%B9%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B1%95%E7%9A%84%E8%A7%82%E5%AF%9F%E9%9A%8F%E7%AC%94.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/%E9%9A%8F%E7%AC%94/%E7%BC%96%E7%A8%8B%E6%80%9D%E8%80%83/2021/07/09/%E5%AF%B9%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B1%95%E7%9A%84%E8%A7%82%E5%AF%9F%E9%9A%8F%E7%AC%94.html</guid>
+        
+        
+        <category>随笔</category>
+        
+        <category>编程思考</category>
+        
+      </item>
+    
+      <item>
+        <title>Sequel笔记</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://sequel.jeremyevans.net/rdoc/files/README_rdoc.html&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以链接Postgresql为例&lt;/p&gt;
+
+&lt;h1 id=&quot;1链接数据库&quot;&gt;1.链接数据库&lt;/h1&gt;
+
+&lt;h2 id=&quot;11-repl链接数据库&quot;&gt;1.1 repl链接数据库&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sequel postgres://username:password@host:port/database
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;12-代码中链接数据库&quot;&gt;1.2. 代码中链接数据库&lt;/h2&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sequel'&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;DB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sequel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'postgres://username:password@host:port/database'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;length items&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;count&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;13-db的单例引用&quot;&gt;1.3 DB的单例引用&lt;/h2&gt;
+
+&lt;p&gt;上下文中通过 DB来引用数据库。DB是  Sequel::Database 的一个实例。
+一切框架会帮你生成。&lt;/p&gt;
+
+&lt;p&gt;如果你找不到数据库引用，也可以 使用  Sequel::Model.db&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;DB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sequel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;db&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;二操作清单&quot;&gt;二、操作清单&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sequel.jeremyevans.net/rdoc/files/doc/cheat_sheet_rdoc.html&quot;&gt;cheat_sheet_rdoc&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;三model的看法&quot;&gt;三、Model的看法&lt;/h1&gt;
+
+&lt;p&gt;Model中应该放通用的计算函数。类似 computer data, 或者就类似于DB中的函数。&lt;/p&gt;
+
+&lt;p&gt;而业务接口要处理的是业务。&lt;/p&gt;
+
+&lt;p&gt;把DB处理数据的能力，用method的方式定在Model中。&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sequel.jeremyevans.net/rdoc/files/README_rdoc.html&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jul 2021 16:45:44 +0800</pubDate>
+        <link>https://mark24code.github.io/ruby/sequel/orm/postgresql/2021/07/05/Sequel%E7%AC%94%E8%AE%B0.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/ruby/sequel/orm/postgresql/2021/07/05/Sequel%E7%AC%94%E8%AE%B0.html</guid>
+        
+        
+        <category>Ruby</category>
+        
+        <category>Sequel</category>
+        
+        <category>ORM</category>
+        
+        <category>Postgresql</category>
+        
+      </item>
+    
+      <item>
+        <title>Postgresql实践最小单元笔记</title>
+        <description>&lt;p&gt;PG的知识和特性太多了浩如烟海。&lt;/p&gt;
+
+&lt;p&gt;这里记录一个使用的最小单元笔记&lt;/p&gt;
+
+&lt;h1 id=&quot;一安装pg&quot;&gt;一、安装PG&lt;/h1&gt;
+
+&lt;p&gt;参考正常安装流程&lt;/p&gt;
+
+&lt;h1 id=&quot;二登录pg&quot;&gt;二、登录PG&lt;/h1&gt;
+
+&lt;h2 id=&quot;21-指定用户登录&quot;&gt;2.1 指定用户登录&lt;/h2&gt;
+
+&lt;p&gt;PG一般会默认新建一个超级用户 叫 postgres, 这个账户是一切的起点。用它来新建其他账户。&lt;/p&gt;
+
+&lt;p&gt;这里特别一点，如果你已经登录在计算机中，在终端进入 psql的时候，会映射你当前用户为 postgres登录到数据库。&lt;/p&gt;
+
+&lt;p&gt;登录使用&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;psql &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; &amp;lt;role name&amp;gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;data base&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;1) 不指定 -U参数，即用当前用户名作为 角色名登录。
+2) 登录除了指定用户，需要制定一个数据库作为登录入口，一般会有同用户名的DB，这里 -d不指定就是 同用户名&lt;/p&gt;
+
+&lt;p&gt;我们根据默认生成的postgres可以这样以超级用户身份登录&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;psql &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; postgres
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;并且依附同名数据库。&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;psql &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;10.17&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;help.
+
+&lt;span class=&quot;nv&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这里，# 代表超级用户 &amp;gt; 是普通用户
+左边代表数据库，目前处在postgres数据库中&lt;/p&gt;
+
+&lt;h1 id=&quot;22-退出shell&quot;&gt;2.2 退出shell&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\q&lt;/code&gt; 退出shell。&lt;/p&gt;
+
+&lt;h1 id=&quot;三角色&quot;&gt;三、角色&lt;/h1&gt;
+
+&lt;p&gt;PG内部通过 role 来划分权限。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\du&lt;/code&gt; 可以查看目前所有角色。&lt;/p&gt;
+
+&lt;p&gt;默认的超级用户（Superuser）拥有创建角色，创建数据库等能力。可以对其他的角色以及数据库进行增删。&lt;/p&gt;
+
+&lt;h2 id=&quot;31-创建一个角色&quot;&gt;3.1 创建一个角色&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;备注：
+ [] 这里表示可选，不代表实际输入
+ &amp;lt;&amp;gt; 这里表示必选&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE ROLE &amp;lt;user name&amp;gt; LOGIN CREATEDB CREATEROLE;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;可以创建一个角色，LOGIN表示可以登录，还有创建DB和创建角色的权限。&lt;/p&gt;
+
+&lt;p&gt;官方标准手册建议把 创建DB、创建角色分成两个用户，单独管理和操作，而不是一个超级用户直接创建。&lt;/p&gt;
+
+&lt;h3 id=&quot;311-设置一个密码&quot;&gt;3.1.1 设置一个密码&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\password &amp;lt;user name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;32-删除角色&quot;&gt;3.2 删除角色&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drop role &amp;lt;user name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;一般要把权限转移走，或者名下无关联的数据库，数据库被删除。无副作用的角色可以被移除。&lt;/p&gt;
+
+&lt;h2 id=&quot;33-切换角色&quot;&gt;3.3 切换角色&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\c - &amp;lt;role name&amp;gt;&lt;/code&gt; 切换到目标角色&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\c &amp;lt;database name&amp;gt;&lt;/code&gt; 切换到数据库&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;34-权限组增减角色&quot;&gt;3.4 权限组增减角色&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GRANT group_role to role1, ....&lt;/code&gt; 给权限组增加角色&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REVOKE group_role from role1,...&lt;/code&gt; 给权限组移除角色&lt;/p&gt;
+
+&lt;h2 id=&quot;35-set-role-&quot;&gt;3.5 SET ROLE &lt;admin&gt;&lt;/admin&gt;&lt;/h2&gt;
+
+&lt;p&gt;一些角色权限，比如设置角色，类似于 超级用户，即使是权限组也并不会真正拥有。&lt;/p&gt;
+
+&lt;p&gt;需要你在 交互环境中  set ROLE postgres; 
+你在这个会话中就拥有了超级用户权限。类似于 sudo了。然后行使权限。&lt;/p&gt;
+
+&lt;h2 id=&quot;36-reset-角色&quot;&gt;3.6 RESET 角色&lt;/h2&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROLE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;原来角色&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NONE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;RESET&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROLE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;四数据库&quot;&gt;四、数据库&lt;/h1&gt;
+
+&lt;h2 id=&quot;41-创建数据库&quot;&gt;4.1 创建数据库&lt;/h2&gt;
+
+&lt;p&gt;在外部shell中&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createdb &amp;lt;db name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在内部交互环境中&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE DATABASE &amp;lt;db name&amp;gt;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;42-删除数据库&quot;&gt;4.2 删除数据库&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drop database &amp;lt;db name&amp;gt;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;43-查看数据库&quot;&gt;4.3 查看数据库&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;44-切换数据库&quot;&gt;4.4 切换数据库&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\c &amp;lt;db name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;五表&quot;&gt;五、表&lt;/h1&gt;
+
+&lt;h2 id=&quot;51-创建表&quot;&gt;5.1 创建表&lt;/h2&gt;
+
+&lt;p&gt;参考  《Postgresql笔记（一）》&lt;/p&gt;
+
+&lt;h2 id=&quot;52-列出所有表&quot;&gt;5.2 列出所有表&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dt&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jul 2021 15:52:29 +0800</pubDate>
+        <link>https://mark24code.github.io/postgresql/%E6%95%B0%E6%8D%AE%E5%BA%93/2021/07/05/Postgresql%E5%AE%9E%E8%B7%B5%E6%9C%80%E5%B0%8F%E5%8D%95%E5%85%83%E7%AC%94%E8%AE%B0.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/postgresql/%E6%95%B0%E6%8D%AE%E5%BA%93/2021/07/05/Postgresql%E5%AE%9E%E8%B7%B5%E6%9C%80%E5%B0%8F%E5%8D%95%E5%85%83%E7%AC%94%E8%AE%B0.html</guid>
+        
+        
+        <category>Postgresql</category>
+        
+        <category>数据库</category>
+        
+      </item>
+    
+      <item>
+        <title>Postgresql实践笔记</title>
+        <description>&lt;h1 id=&quot;一好的sql&quot;&gt;一、好的SQL&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;select * 并不推荐，因为增加表的一行就会让他的结果发生变化。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;声明清晰字段是优秀的实践。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确保返回不产生变化。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;结果行的顺序可能变化。你可以组合使用DISTINCT和ORDER BY来保证获取一 致的结果: 2
+SELECT DISTINCT city FROM weather ORDER BY city;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 02 Jul 2021 14:08:22 +0800</pubDate>
+        <link>https://mark24code.github.io/postgresql/%E6%95%B0%E6%8D%AE%E5%BA%93/2021/07/02/Postgresql%E5%AE%9E%E8%B7%B5%E7%AC%94%E8%AE%B0.html</link>
+        <guid isPermaLink="true">https://mark24code.github.io/postgresql/%E6%95%B0%E6%8D%AE%E5%BA%93/2021/07/02/Postgresql%E5%AE%9E%E8%B7%B5%E7%AC%94%E8%AE%B0.html</guid>
+        
+        
+        <category>Postgresql</category>
+        
+        <category>数据库</category>
+        
+      </item>
+    
+  </channel>
+</rss>
